@@ -10,12 +10,12 @@ public class CardsDirector : MonoBehaviour
     [SerializeField] List<GameObject> prefabHearts;
     [SerializeField] List<GameObject> prefabJokers;
 
-    //神経衰弱のカードを返す
+    //神経衰弱でのカードを返す
     public List<CardController> GetMemoryCards()
     {
         List<CardController> ret = new List<CardController>();
 
-        //使うカード種類
+        //使うカードの種類
         ret.AddRange(createCards(SuitType.Spade, 3));
         ret.AddRange(createCards(SuitType.Diamond, 3));
 
