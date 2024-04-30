@@ -48,11 +48,9 @@ public class SceneDirector : MonoBehaviour
 
         for (int i = 0; i < width * height; i++)
         {
-            //�\���ʒu
             float x = (i % width - offset.x) * CardController.Width;
             float y = (i / width - offset.y) * CardController.Height;
 
-            //�ꏊ�Ɗp�x
             cards[i].transform.position = new Vector3(x, 0, y);
             cards[i].FlipCard(false);
         }
